@@ -1,0 +1,40 @@
+services:
+  # Backend API
+  - type: web
+    name: flagify-backend
+    env: docker
+    dockerContext: .
+    dockerCommand: node_modules/.bin/pm2-runtime start ecosystem.config.js --only back-end
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3100
+      - key: JWT_SECRET
+        generateValue: true # Render will automatically generate a secure key
+      - key: ENCRYPTION_KEY
+        generateValue: true # Render will automatically generate a secure key
+      - key: MONGODB_URI
+        sync: false # You will be prompted to paste your MongoDB Atlas connection string
+      - key: APP_ORIGIN
+        fromService:
+          name: flagify-frontend
+          type: web
+          property: host
+
+  # Frontend Dashboard
+  - type: web
+    name: flagify-frontend
+    env: docker
+    dockerContext: .
+    dockerCommand: node_modules/.bin/pm2-runtime start ecosystem.config.js --only front-end
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: API_HOST
+        fromService:
+          name: flagify-backend
+          type: web
+          property: host
