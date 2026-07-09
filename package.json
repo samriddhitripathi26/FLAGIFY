@@ -18,6 +18,7 @@
     "build:deps": "pnpm --filter @flagify/flagify --filter @flagify/flagify-react --filter shared run build",
     "build:app": "pnpm --filter back-end --filter front-end run build",
     "build": "pnpm build:deps && pnpm build:app",
+    "build:vercel": "pnpm build:deps && pnpm --filter front-end run build",
     "start": "pm2-runtime start ecosystem.config.js",
     "start:with-tracing": "TRACING_PROVIDER=opentelemetry pm2-runtime start ecosystem.config.js",
     "start:with-datadog": "TRACING_PROVIDER=datadog pm2-runtime start ecosystem.config.js",

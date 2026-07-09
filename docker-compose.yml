@@ -7,6 +7,9 @@ services:
     volumes:
       - mongodata:/data/db
   flagify:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: "flagify/flagify:latest"
     ports:
       - "3000:3000"
