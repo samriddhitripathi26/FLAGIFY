@@ -1,11 +1,5 @@
 import "./init/aliases";
-import tracer from "dd-trace";
 import { Attributes, setMetrics } from "./util/metrics";
-
-tracer.init({
-  logInjection: true,
-  runtimeMetrics: true,
-});
 
 class Counter {
   name: string;
@@ -15,11 +9,11 @@ class Counter {
   }
 
   increment(attributes?: Attributes) {
-    tracer.dogstatsd.increment(this.name, 1, attributes);
+    // No-op: Datadog is disabled
   }
 
   decrement(attributes?: Attributes) {
-    tracer.dogstatsd.decrement(this.name, 1, attributes);
+    // No-op: Datadog is disabled
   }
 }
 
@@ -31,7 +25,7 @@ class Histogram {
   }
 
   record(v: number, attributes?: Attributes) {
-    tracer.dogstatsd.histogram(this.name, v, attributes);
+    // No-op: Datadog is disabled
   }
 }
 
@@ -43,7 +37,7 @@ class Gauge {
   }
 
   record(v: number, attributes?: Attributes) {
-    tracer.dogstatsd.gauge(this.name, v, attributes);
+    // No-op: Datadog is disabled
   }
 }
 
@@ -52,3 +46,4 @@ setMetrics({
   getHistogram: (name: string) => new Histogram(name),
   getGauge: (name: string) => new Gauge(name),
 });
+
