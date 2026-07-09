@@ -133,12 +133,9 @@
     "onlyBuiltDependencies": [
       "@datadog/native-appsec",
       "@datadog/native-iast-taint-tracking",
-      "@datadog/native-metrics",
-      "@datadog/pprof",
       "@parcel/watcher",
       "@sentry/cli",
       "@swc/core",
-      "dd-trace",
       "esbuild",
       "isolated-vm",
       "kerberos",
