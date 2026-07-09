@@ -68,15 +68,6 @@ importers:
 
   .:
     dependencies:
-      '@datadog/native-metrics':
-        specifier: ^3.1.1
-        version: 3.1.1
-      '@datadog/pprof':
-        specifier: ^5.13.2
-        version: 5.13.2
-      dd-trace:
-        specifier: ^5.83.0
-        version: 5.83.0
       pm2:
         specifier: ^6.0.14
         version: 6.0.14
@@ -2355,37 +2346,6 @@ packages:
     resolution: {integrity: sha512-6H8ianbDIMJqTpYiWfBbVC2qv6RIbm0WBfyzutl/QoFu+rb6n1sWxmLtEZcFdq9l2KLv7MNDY7bpT5rZlSHNMg==}
     engines: {node: '>=14.0.0'}
 
-  '@datadog/flagging-core@0.2.0':
-    resolution: {integrity: sha512-DocYjr8NFJZfsnqzu3MuBUNqgbJquq1doimkKEXI5UImLmz/tR0LO09dd651pBhoz1Pa4SKcnPaxWFLTqxWtsA==}
-    peerDependencies:
-      '@openfeature/core': ^1.8.1
-
-  '@datadog/libdatadog@0.7.0':
-    resolution: {integrity: sha512-VVZLspzQcfEU47gmGCVoRkngn7RgFRR4CHjw4YaX8eWT+xz4Q4l6PvA45b7CMk9nlt3MNN5MtGdYttYMIpo6Sg==}
-
-  '@datadog/native-appsec@10.3.0':
-    resolution: {integrity: sha512-FjNhxKetbBVGiq+dl8NYoi/95IAYU+W7PjBceNP7Qkvbt8uhy+KTlQVW1A2X67mK0CKHahDTesBMaPwY9zhflw==}
-    engines: {node: '>=16'}
-
-  '@datadog/native-iast-taint-tracking@4.1.0':
-    resolution: {integrity: sha512-g9K9Ddx1YQfrQIC2hgtfnYUGuzAFvSvhvt2lPZOAWBPo+bkYoW5KEkMHoY5XykCigTfXBYcQicRV0xB22AMkHw==}
-
-  '@datadog/native-metrics@3.1.1':
-    resolution: {integrity: sha512-MU1gHrolwryrU4X9g+fylA1KPH3S46oqJPEtVyrO+3Kh29z80fegmtyrU22bNt8LigPUK/EdPCnSbMe88QbnxQ==}
-    engines: {node: '>=16'}
-
-  '@datadog/openfeature-node-server@0.2.0':
-    resolution: {integrity: sha512-Jn8lShFyqNji0tiKntLcCRwu3xrhg93fTTJS3gHSPKMfBDBKxjB9uF8Hu5Ayn2k0QuwJexx5atN9GSiWX0h5qg==}
-    engines: {node: '>=18.0.0'}
-
-  '@datadog/pprof@5.13.2':
-    resolution: {integrity: sha512-Th8u7pvoguTfbUx/mlZLHD9TxFCHO+wRAvlEaYFAYAmMvbPLww4YowvTy1UMvpi8LbUbwil3Fo8rKCrilvXHhQ==}
-    engines: {node: '>=16'}
-
-  '@datadog/wasm-js-rewriter@5.0.1':
-    resolution: {integrity: sha512-EzbV3Lrdt3udQEsbDOVC5gB1y7yxfpBbrSIk4jaEsGjyj0Dbv2HGj7tZjs+qXzIzNonHc8h5El2bYZOGfC2wwg==}
-    engines: {node: '>= 10'}
-
   '@date-fns/tz@1.2.0':
     resolution: {integrity: sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg==}
 
@@ -3356,18 +3316,8 @@ packages:
     resolution: {integrity: sha512-jq/ik7A7bCO/oQp0/Znnpu8/JBXifAQ2OF2KmswbNYt7EpsLqz2DaI/CvkrXRSb+Edzx4Xx3usEgSyocVN/u2A==}
     engines: {node: '>=12.0.0'}
 
-  '@openfeature/server-sdk@1.18.0':
-    resolution: {integrity: sha512-uP8nqEGBS58s3iWXx6d8vnJ6ZVt3DACJL4PWADOAuwIS4xXpID91783e9f6zQ0i1ijQpj3yx+3ZuCB2LfQMUMA==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@openfeature/core': ^1.7.0
-
   '@opentelemetry/api-logs@0.207.0':
     resolution: {integrity: sha512-lAb0jQRVyleQQGiuuvCOTDVspc14nx6XJjP4FspJ1sNARo3Regq4ZZbrc3rN4b1TYSuUCvgH+UXUPug4SLOqEQ==}
-    engines: {node: '>=8.0.0'}
-
-  '@opentelemetry/api-logs@0.211.0':
-    resolution: {integrity: sha512-swFdZq8MCdmdR22jTVGQDhwqDzcI4M10nhjXkLr1EsIzXgZBqm4ZlmmcWsg3TSNf+3mzgOiqveXmBLZuDi2Lgg==}
     engines: {node: '>=8.0.0'}
 
   '@opentelemetry/api-logs@0.212.0':
@@ -7780,14 +7730,6 @@ packages:
   dayjs@1.8.36:
     resolution: {integrity: sha512-3VmRXEtw7RZKAf+4Tv1Ym9AGeo8r8+CjDi26x+7SYQil1UqtqdaokhzoEJohqlzt0m5kacJSDhJQkG/LWhpRBw==}
 
-  dc-polyfill@0.1.10:
-    resolution: {integrity: sha512-9iSbB8XZ7aIrhUtWI5ulEOJ+IyUN+axquodHK+bZO4r7HfY/xwmo6I4fYYf+aiDom+WMcN/wnzCz+pKvHDDCug==}
-    engines: {node: '>=12.17'}
-
-  dd-trace@5.83.0:
-    resolution: {integrity: sha512-12seR3wGc5Wp+NAHBO6gShCtg8wz0+p+rC6tc3G5MrSgowMqV0XdNqahOHqeM8kMRmSy1OnWRQcK8xjxVfnsew==}
-    engines: {node: '>=18 <26'}
-
   debounce@1.2.1:
     resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
 
@@ -7927,10 +7869,6 @@ packages:
     resolution: {integrity: sha512-ywHHCd282pjWh0XVmxMQIXfALHMvmRlVHIY3aipUK1G1I16uFUnc/Lo4itJGMGBt77fgyxlFWjenLcMyP+ZtgA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
-
-  delay@5.0.0:
-    resolution: {integrity: sha512-ReEBKkIfe4ya47wlPYf/gu5ib6yUG0/Aez0JQZQz94kiWtRQvZIQbTiehsnwHvLSWJnQdhVeqYue7Id1dKr0qw==}
-    engines: {node: '>=10'}
 
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
@@ -9194,9 +9132,6 @@ packages:
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
-
-  import-in-the-middle@2.0.3:
-    resolution: {integrity: sha512-BhJ3Rc6x+kA3EE0apAuGc4rsihsUrEj31lCkXRfwGzLKqgzlSyBLvthIinsvLg6J4bCCTgVAoAgD+KwkISjmBQ==}
 
   import-in-the-middle@2.0.6:
     resolution: {integrity: sha512-3vZV3jX0XRFW3EJDTwzWoZa+RH1b8eTTx6YOCjglrLyPuepwoBti1k3L2dKwdCUrnVEfc5CuRuGstaC/uQJJaw==}
@@ -10623,9 +10558,6 @@ packages:
     resolution: {integrity: sha512-E2wEyrgX/CqvicaQYU3Ze1PFGjc4QYPGsjUrlYkqAE0WjHEZwgOsGMPMzkMse4LjJbDmaEuDX3CM036j5K2DSQ==}
     engines: {node: '>=10'}
 
-  node-addon-api@6.1.0:
-    resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
-
   node-addon-api@7.1.1:
     resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
 
@@ -10650,14 +10582,6 @@ packages:
   node-forge@1.4.0:
     resolution: {integrity: sha512-LarFH0+6VfriEhqMMcLX2F7SwSXeWwnEAJEsYm5QKWchiVYVvJyV9v7UDvUv+w5HO23ZpQTXDv/GxdDdMyOuoQ==}
     engines: {node: '>= 6.13.0'}
-
-  node-gyp-build@3.9.0:
-    resolution: {integrity: sha512-zLcTg6P4AbcHPq465ZMFNXx7XpKKJh+7kkN699NiQWisR2uWYOWNWqRHAmbnmKiL4e9aLSlmy5U7rEMUXV59+A==}
-    hasBin: true
-
-  node-gyp-build@4.8.4:
-    resolution: {integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==}
-    hasBin: true
 
   node-gyp@12.2.0:
     resolution: {integrity: sha512-q23WdzrQv48KozXlr0U1v9dwO/k59NHeSzn6loGcasyf0UnSrtzs8kRxM+mfwJSf0DkX0s43hcqgnSO4/VNthQ==}
@@ -11198,9 +11122,6 @@ packages:
   postgres-interval@1.2.0:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
-
-  pprof-format@2.2.1:
-    resolution: {integrity: sha512-p4tVN7iK19ccDqQv8heyobzUmbHyds4N2FI6aBMcXz6y99MglTWDxIyhFkNaLeEXs6IFUEzT0zya0icbSLLY0g==}
 
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
@@ -12126,9 +12047,6 @@ packages:
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
-
-  spark-md5@3.0.2:
-    resolution: {integrity: sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==}
 
   sparse-bitfield@3.0.3:
     resolution: {integrity: sha512-kvzhi7vqKTfkh0PZU+2D2PIllw2ymqJKujUcyPMd9Y75Nv4nPbGJZXNhxsgdQab2BmlDct1YnfQCguEvHr7VsQ==}
@@ -15352,53 +15270,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@datadog/flagging-core@0.2.0':
-    dependencies:
-      spark-md5: 3.0.2
-    optional: true
-
-  '@datadog/libdatadog@0.7.0':
-    optional: true
-
-  '@datadog/native-appsec@10.3.0':
-    dependencies:
-      node-gyp-build: 3.9.0
-    optional: true
-
-  '@datadog/native-iast-taint-tracking@4.1.0':
-    dependencies:
-      node-gyp-build: 3.9.0
-    optional: true
-
-  '@datadog/native-metrics@3.1.1':
-    dependencies:
-      node-addon-api: 6.1.0
-      node-gyp-build: 3.9.0
-
-  '@datadog/openfeature-node-server@0.2.0':
-    dependencies:
-      '@datadog/flagging-core': 0.2.0
-      '@openfeature/server-sdk': 1.18.0
-    transitivePeerDependencies:
-      - '@openfeature/core'
-    optional: true
-
-  '@datadog/pprof@5.13.2':
-    dependencies:
-      delay: 5.0.0
-      node-gyp-build: 3.9.0
-      p-limit: 3.1.0
-      pprof-format: 2.2.1
-      source-map: 0.7.4
-
-  '@datadog/wasm-js-rewriter@5.0.1':
-    dependencies:
-      js-yaml: 4.1.1
-      lru-cache: 7.18.3
-      module-details-from-path: 1.0.4
-      node-gyp-build: 4.8.4
-    optional: true
-
   '@date-fns/tz@1.2.0': {}
 
   '@discoveryjs/json-ext@0.5.7': {}
@@ -16388,17 +16259,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@openfeature/server-sdk@1.18.0':
-    optional: true
-
   '@opentelemetry/api-logs@0.207.0':
     dependencies:
       '@opentelemetry/api': 1.9.0
-
-  '@opentelemetry/api-logs@0.211.0':
-    dependencies:
-      '@opentelemetry/api': 1.9.0
-    optional: true
 
   '@opentelemetry/api-logs@0.212.0':
     dependencies:
@@ -21907,25 +21770,6 @@ snapshots:
 
   dayjs@1.8.36: {}
 
-  dc-polyfill@0.1.10: {}
-
-  dd-trace@5.83.0:
-    dependencies:
-      dc-polyfill: 0.1.10
-      import-in-the-middle: 2.0.3
-    optionalDependencies:
-      '@datadog/libdatadog': 0.7.0
-      '@datadog/native-appsec': 10.3.0
-      '@datadog/native-iast-taint-tracking': 4.1.0
-      '@datadog/native-metrics': 3.1.1
-      '@datadog/openfeature-node-server': 0.2.0
-      '@datadog/pprof': 5.13.2
-      '@datadog/wasm-js-rewriter': 5.0.1
-      '@opentelemetry/api': 1.9.0
-      '@opentelemetry/api-logs': 0.211.0
-    transitivePeerDependencies:
-      - '@openfeature/core'
-
   debounce@1.2.1: {}
 
   debug@2.6.9:
@@ -22038,8 +21882,6 @@ snapshots:
   delay-cli@2.0.0:
     dependencies:
       meow: 10.1.3
-
-  delay@5.0.0: {}
 
   delayed-stream@1.0.0: {}
 
@@ -23738,13 +23580,6 @@ snapshots:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
-
-  import-in-the-middle@2.0.3:
-    dependencies:
-      acorn: 8.15.0
-      acorn-import-attributes: 1.9.5(acorn@8.15.0)
-      cjs-module-lexer: 2.2.0
-      module-details-from-path: 1.0.4
 
   import-in-the-middle@2.0.6:
     dependencies:
@@ -25621,8 +25456,6 @@ snapshots:
     dependencies:
       semver: 7.7.3
 
-  node-addon-api@6.1.0: {}
-
   node-addon-api@7.1.1:
     optional: true
 
@@ -25641,11 +25474,6 @@ snapshots:
       formdata-polyfill: 4.0.10
 
   node-forge@1.4.0: {}
-
-  node-gyp-build@3.9.0: {}
-
-  node-gyp-build@4.8.4:
-    optional: true
 
   node-gyp@12.2.0:
     dependencies:
@@ -26305,8 +26133,6 @@ snapshots:
   postgres-interval@1.2.0:
     dependencies:
       xtend: 4.0.2
-
-  pprof-format@2.2.1: {}
 
   prebuild-install@7.1.3:
     dependencies:
@@ -27492,9 +27318,6 @@ snapshots:
   space-separated-tokens@1.1.5: {}
 
   space-separated-tokens@2.0.2: {}
-
-  spark-md5@3.0.2:
-    optional: true
 
   sparse-bitfield@3.0.3:
     dependencies:
